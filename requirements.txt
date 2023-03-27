@@ -1,0 +1,2 @@
+praatio~=5.1
+jsonschema~=4.1
