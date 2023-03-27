@@ -26,7 +26,7 @@ If you don't have a Nvidea GPU, or don't want to use it, you cannot use the CUDA
 ## Installing
 Once the requirements are satisfied, you can install whisper-timestamped and this package:
 
-Whisper-timestamped is not on pypi, so the seperate `git+` install is needed. (If you only want to use the package as a library instead of a cli, whisper-timestamped is not a dependency, and the manual install is not needed.)
+Whisper-timestamped is not on pypi, so the seperate `git+` install is needed. (If you only want to use the package as a library instead of a cli, whisper-timestamped is not a dependency, and this manual install of ir is not needed.)
 ```bash
 [python-executable] -m pip install git+https://github.com/linto-ai/whisper-timestamped
 [python-executable] -m pip install transcribe_allign_textgrid
@@ -42,7 +42,7 @@ here `path` is the path to the audio files.
 * If a directory path is passed, all audio files in the directory will be transcribed, and force-alligned transcription textgrids of the same name will be generated in this directory.
 * If a file path is passed, a force-alligned transcription textgrid will be generated into the same directory as the original file.
 
-## Selecting a different language
+## Selecting a different model
 By default, this will run on the smallest, that is, least accurate and fastest, model, `tiny`. To run with another model, pass it as an argument:
 ```bash
 [python-executable] -m transcribe_allign_textgrid [path] --model [model]
@@ -59,7 +59,7 @@ The available models are:
 | large  |   1550 M   |    ~10 GB     |       1x       |
 
 ## Specifying what language to use
-By default, the application will try to detect what langage is used automatically. However, you can also specify this manutally:
+By default, the application will try to detect what langage is used automatically. However, you can also specify this manually:
 ```bash
 [python-executable] -m transcribe_allign_textgrid [path] --language [language]
 
@@ -67,10 +67,10 @@ By default, the application will try to detect what langage is used automaticall
 [python-executable] -m transcribe_allign_textgrid [path] --model [model] --language [language]
 ```
 
-To see what languages are available, please see the [tokenizer.py](https://github.com/openai/whisper/blob/main/whisper/tokenizer.py) file in the Whisper source (Yes, the OpenAI team themselves recommends finding it this way, too.) (Both the long and the short name work)
+To see what languages are available, please see the [tokenizer.py](https://github.com/openai/whisper/blob/main/whisper/tokenizer.py) file in the Whisper source (Yes, the OpenAI team themselves recommends finding it this way, too.)
 
 # Using as a library
-The tool can also be used as a library. It exports one function: `whisper_to_textgrid()` Which takes in a transcription object (nested dict) from [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) and returns a Textgrid object from [praatio](https://github.com/timmahrt/praatIO)
+The tool can also be used as a library. It exports one function: `whisper_to_textgrid()` Which takes in a transcription object (nested dict) from [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) and returns a Textgrid object from [praatio](https://github.com/timmahrt/praatIO). The typical Json output from whisper-timestamped works, too.
 
 This library part of the package does not depend on whisper-timestamped, to make it fully installable and usable as a requirement via pipy.
 
@@ -84,6 +84,9 @@ The output TextGrids have four TextGridTiers:
 If one of these tiers would have been completely empty per the output of whisper-timestamped, to statisfy Praat's error handeling, a tier with an empty interval (0.0, 0.1) is generated.
 
 In praat, it will look a little like this:
+<p allign="center">
+  <img src=".assets/sample_output.png" />
+</p>
 
 # Development
 The package is quite trivial, but, if you do want work on it, here are some instructions
