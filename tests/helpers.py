@@ -6,7 +6,7 @@ from typing import Dict, List
 
 
 def load_json(data_file: Path) -> Dict:
-    with data_file.open() as d:
+    with data_file.open(encoding="utf-8") as d:
         return json.load(d)
 
 
