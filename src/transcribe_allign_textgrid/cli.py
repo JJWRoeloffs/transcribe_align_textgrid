@@ -39,7 +39,7 @@ def check_cli_dependencies() -> bool:
             """
         )
         return False
-    
+
     return True
 
 
@@ -48,6 +48,10 @@ class Args:
     paths: List[Path]
     model: str
     language: Optional[str]
+
+
+def get_files(path: Path) -> List[Path]:
+    return [path] if path.is_file() else list(path.iterdir())
 
 
 def parse_args(args: List[str]) -> Args:
@@ -91,6 +95,8 @@ def parse_args(args: List[str]) -> Args:
     for path in paths:
         if not path.exists():
             parser.error(f"Passed path does not exist: {path}")
+
+    paths = [file for path in paths for file in get_files(path)]
 
     return Args(paths=paths, model=arguments.model, language=arguments.language)
 
