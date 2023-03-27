@@ -8,7 +8,7 @@ Create force-alligned transcription TextGrids from raw audio!
 __title__ = "transcribe_allign_textgrid"
 __author__ = "JJWRoeloffs"
 __license__ = "MIT"
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 
 from transcribe_allign_textgrid.adapter import (
