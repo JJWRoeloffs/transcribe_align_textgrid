@@ -12,14 +12,16 @@ from transcribe_allign_textgrid import whisper_to_textgrid
 
 # Preprocessing: Managing imports that are not in requirements.txt
 def check_cli_dependencies() -> bool:
-    if ffmpeg := shutil.which("ffmpeg") is None:
+    if shutil.which("ffmpeg") is None:
         print(
             """Dependency ffmpeg is not installed.
             Please install if following the instructions on whisper's documentation:
             https://github.com/openai/whisper-timestamped
             """
         )
-    if timestamped := find_spec("whisper_timestamped") is None:
+        return False
+
+    if find_spec("whisper_timestamped") is None:
         print(
             """Dependency whisper-timestamped is not installed.
             This needs to be installed sperately, as it cannot be installed via pypi
@@ -27,7 +29,8 @@ def check_cli_dependencies() -> bool:
             https://github.com/JJWRoeloffs/transcribe_allign_textgrid
             """
         )
-    if whisper := find_spec("whisper") is None:
+        return False
+    if find_spec("whisper") is None:
         print(
             """Dependency whisper is not installed.
             This should have been installed as a dependency of whisper-timestamped, but was not.
@@ -35,8 +38,9 @@ def check_cli_dependencies() -> bool:
             Else, if you want simply want this error to go away, install whisper manually.
             """
         )
-
-    return whisper is not None and timestamped is not None and ffmpeg is not None
+        return False
+    
+    return True
 
 
 @dataclass
