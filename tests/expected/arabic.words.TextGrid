@@ -1,0 +1,400 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.36 
+xmax = 41.3 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "segments_text" 
+        xmin = 0.36 
+        xmax = 41.3 
+        intervals: size = 14 
+        intervals [1]:
+            xmin = 0.36 
+            xmax = 7.48 
+            text = "حبّي أنصار الهدى" 
+        intervals [2]:
+            xmin = 7.48 
+            xmax = 15.2 
+            text = "حبّي ركب الفدا" 
+        intervals [3]:
+            xmin = 15.2 
+            xmax = 15.48 
+            text = "" 
+        intervals [4]:
+            xmin = 15.48 
+            xmax = 23.42 
+            text = "وطلّبي سأر الشاهد" 
+        intervals [5]:
+            xmin = 23.42 
+            xmax = 24.2 
+            text = "" 
+        intervals [6]:
+            xmin = 24.2 
+            xmax = 28.96 
+            text = "وطلّبي سأر الشاهد" 
+        intervals [7]:
+            xmin = 28.96 
+            xmax = 30.48 
+            text = "" 
+        intervals [8]:
+            xmin = 30.48 
+            xmax = 33.34 
+            text = "لمتى سنضل رقودا" 
+        intervals [9]:
+            xmin = 33.34 
+            xmax = 33.36 
+            text = "" 
+        intervals [10]:
+            xmin = 33.36 
+            xmax = 35.88 
+            text = "نغرق في النوم ونشخر" 
+        intervals [11]:
+            xmin = 35.88 
+            xmax = 36.24 
+            text = "" 
+        intervals [12]:
+            xmin = 36.24 
+            xmax = 38.72 
+            text = "وعن الآذان نسمّه" 
+        intervals [13]:
+            xmin = 38.72 
+            xmax = 38.88 
+            text = "" 
+        intervals [14]:
+            xmin = 38.88 
+            xmax = 41.3 
+            text = "ونغمّض كي لا نمسر" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "segments_confidence" 
+        xmin = 0.36 
+        xmax = 41.3 
+        intervals: size = 14 
+        intervals [1]:
+            xmin = 0.36 
+            xmax = 7.48 
+            text = "0.651" 
+        intervals [2]:
+            xmin = 7.48 
+            xmax = 15.2 
+            text = "0.829" 
+        intervals [3]:
+            xmin = 15.2 
+            xmax = 15.48 
+            text = "" 
+        intervals [4]:
+            xmin = 15.48 
+            xmax = 23.42 
+            text = "0.587" 
+        intervals [5]:
+            xmin = 23.42 
+            xmax = 24.2 
+            text = "" 
+        intervals [6]:
+            xmin = 24.2 
+            xmax = 28.96 
+            text = "0.875" 
+        intervals [7]:
+            xmin = 28.96 
+            xmax = 30.48 
+            text = "" 
+        intervals [8]:
+            xmin = 30.48 
+            xmax = 33.34 
+            text = "0.714" 
+        intervals [9]:
+            xmin = 33.34 
+            xmax = 33.36 
+            text = "" 
+        intervals [10]:
+            xmin = 33.36 
+            xmax = 35.88 
+            text = "0.926" 
+        intervals [11]:
+            xmin = 35.88 
+            xmax = 36.24 
+            text = "" 
+        intervals [12]:
+            xmin = 36.24 
+            xmax = 38.72 
+            text = "0.765" 
+        intervals [13]:
+            xmin = 38.72 
+            xmax = 38.88 
+            text = "" 
+        intervals [14]:
+            xmin = 38.88 
+            xmax = 41.3 
+            text = "0.79" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words_text" 
+        xmin = 0.36 
+        xmax = 41.3 
+        intervals: size = 32 
+        intervals [1]:
+            xmin = 0.36 
+            xmax = 4.26 
+            text = "حبّي" 
+        intervals [2]:
+            xmin = 4.26 
+            xmax = 5.7 
+            text = "أنصار" 
+        intervals [3]:
+            xmin = 5.7 
+            xmax = 7.48 
+            text = "الهدى" 
+        intervals [4]:
+            xmin = 7.48 
+            xmax = 12.58 
+            text = "حبّي" 
+        intervals [5]:
+            xmin = 12.58 
+            xmax = 13.76 
+            text = "ركب" 
+        intervals [6]:
+            xmin = 13.76 
+            xmax = 15.2 
+            text = "الفدا" 
+        intervals [7]:
+            xmin = 15.2 
+            xmax = 15.48 
+            text = "" 
+        intervals [8]:
+            xmin = 15.48 
+            xmax = 20.68 
+            text = "وطلّبي" 
+        intervals [9]:
+            xmin = 20.68 
+            xmax = 21.78 
+            text = "سأر" 
+        intervals [10]:
+            xmin = 21.78 
+            xmax = 23.42 
+            text = "الشاهد" 
+        intervals [11]:
+            xmin = 23.42 
+            xmax = 24.2 
+            text = "" 
+        intervals [12]:
+            xmin = 24.2 
+            xmax = 25.98 
+            text = "وطلّبي" 
+        intervals [13]:
+            xmin = 25.98 
+            xmax = 27.12 
+            text = "سأر" 
+        intervals [14]:
+            xmin = 27.12 
+            xmax = 28.96 
+            text = "الشاهد" 
+        intervals [15]:
+            xmin = 28.96 
+            xmax = 30.48 
+            text = "" 
+        intervals [16]:
+            xmin = 30.48 
+            xmax = 31.48 
+            text = "لمتى" 
+        intervals [17]:
+            xmin = 31.48 
+            xmax = 32.34 
+            text = "سنضل" 
+        intervals [18]:
+            xmin = 32.34 
+            xmax = 33.34 
+            text = "رقودا" 
+        intervals [19]:
+            xmin = 33.34 
+            xmax = 33.36 
+            text = "" 
+        intervals [20]:
+            xmin = 33.36 
+            xmax = 34.22 
+            text = "نغرق" 
+        intervals [21]:
+            xmin = 34.22 
+            xmax = 34.44 
+            text = "في" 
+        intervals [22]:
+            xmin = 34.44 
+            xmax = 35.04 
+            text = "النوم" 
+        intervals [23]:
+            xmin = 35.04 
+            xmax = 35.88 
+            text = "ونشخر" 
+        intervals [24]:
+            xmin = 35.88 
+            xmax = 36.24 
+            text = "" 
+        intervals [25]:
+            xmin = 36.24 
+            xmax = 36.76 
+            text = "وعن" 
+        intervals [26]:
+            xmin = 36.76 
+            xmax = 37.72 
+            text = "الآذان" 
+        intervals [27]:
+            xmin = 37.72 
+            xmax = 38.72 
+            text = "نسمّه" 
+        intervals [28]:
+            xmin = 38.72 
+            xmax = 38.88 
+            text = "" 
+        intervals [29]:
+            xmin = 38.88 
+            xmax = 39.9 
+            text = "ونغمّض" 
+        intervals [30]:
+            xmin = 39.9 
+            xmax = 40.28 
+            text = "كي" 
+        intervals [31]:
+            xmin = 40.28 
+            xmax = 40.56 
+            text = "لا" 
+        intervals [32]:
+            xmin = 40.56 
+            xmax = 41.3 
+            text = "نمسر" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "words_confidence" 
+        xmin = 0.36 
+        xmax = 41.3 
+        intervals: size = 32 
+        intervals [1]:
+            xmin = 0.36 
+            xmax = 4.26 
+            text = "0.436" 
+        intervals [2]:
+            xmin = 4.26 
+            xmax = 5.7 
+            text = "0.795" 
+        intervals [3]:
+            xmin = 5.7 
+            xmax = 7.48 
+            text = "0.837" 
+        intervals [4]:
+            xmin = 7.48 
+            xmax = 12.58 
+            text = "0.875" 
+        intervals [5]:
+            xmin = 12.58 
+            xmax = 13.76 
+            text = "0.853" 
+        intervals [6]:
+            xmin = 13.76 
+            xmax = 15.2 
+            text = "0.711" 
+        intervals [7]:
+            xmin = 15.2 
+            xmax = 15.48 
+            text = "" 
+        intervals [8]:
+            xmin = 15.48 
+            xmax = 20.68 
+            text = "0.54" 
+        intervals [9]:
+            xmin = 20.68 
+            xmax = 21.78 
+            text = "0.94" 
+        intervals [10]:
+            xmin = 21.78 
+            xmax = 23.42 
+            text = "0.421" 
+        intervals [11]:
+            xmin = 23.42 
+            xmax = 24.2 
+            text = "" 
+        intervals [12]:
+            xmin = 24.2 
+            xmax = 25.98 
+            text = "0.799" 
+        intervals [13]:
+            xmin = 25.98 
+            xmax = 27.12 
+            text = "0.95" 
+        intervals [14]:
+            xmin = 27.12 
+            xmax = 28.96 
+            text = "0.936" 
+        intervals [15]:
+            xmin = 28.96 
+            xmax = 30.48 
+            text = "" 
+        intervals [16]:
+            xmin = 30.48 
+            xmax = 31.48 
+            text = "0.692" 
+        intervals [17]:
+            xmin = 31.48 
+            xmax = 32.34 
+            text = "0.754" 
+        intervals [18]:
+            xmin = 32.34 
+            xmax = 33.34 
+            text = "0.686" 
+        intervals [19]:
+            xmin = 33.34 
+            xmax = 33.36 
+            text = "" 
+        intervals [20]:
+            xmin = 33.36 
+            xmax = 34.22 
+            text = "0.901" 
+        intervals [21]:
+            xmin = 34.22 
+            xmax = 34.44 
+            text = "0.873" 
+        intervals [22]:
+            xmin = 34.44 
+            xmax = 35.04 
+            text = "0.974" 
+        intervals [23]:
+            xmin = 35.04 
+            xmax = 35.88 
+            text = "0.942" 
+        intervals [24]:
+            xmin = 35.88 
+            xmax = 36.24 
+            text = "" 
+        intervals [25]:
+            xmin = 36.24 
+            xmax = 36.76 
+            text = "0.923" 
+        intervals [26]:
+            xmin = 36.76 
+            xmax = 37.72 
+            text = "0.82" 
+        intervals [27]:
+            xmin = 37.72 
+            xmax = 38.72 
+            text = "0.619" 
+        intervals [28]:
+            xmin = 38.72 
+            xmax = 38.88 
+            text = "" 
+        intervals [29]:
+            xmin = 38.88 
+            xmax = 39.9 
+            text = "0.91" 
+        intervals [30]:
+            xmin = 39.9 
+            xmax = 40.28 
+            text = "0.833" 
+        intervals [31]:
+            xmin = 40.28 
+            xmax = 40.56 
+            text = "0.804" 
+        intervals [32]:
+            xmin = 40.56 
+            xmax = 41.3 
+            text = "0.619" 

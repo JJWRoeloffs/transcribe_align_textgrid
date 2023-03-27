@@ -1,0 +1,88 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.38 
+xmax = 2.34 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "segments_text" 
+        xmin = 0.38 
+        xmax = 2.34 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0.38 
+            xmax = 2.34 
+            text = "Dis-moi, est-ce que l'avion vole?" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "segments_confidence" 
+        xmin = 0.38 
+        xmax = 2.34 
+        intervals: size = 1 
+        intervals [1]:
+            xmin = 0.38 
+            xmax = 2.34 
+            text = "0.928" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words_text" 
+        xmin = 0.38 
+        xmax = 2.34 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0.38 
+            xmax = 1.1 
+            text = "Dis-moi," 
+        intervals [2]:
+            xmin = 1.1 
+            xmax = 1.28 
+            text = "" 
+        intervals [3]:
+            xmin = 1.28 
+            xmax = 1.5 
+            text = "est-ce" 
+        intervals [4]:
+            xmin = 1.5 
+            xmax = 1.66 
+            text = "que" 
+        intervals [5]:
+            xmin = 1.66 
+            xmax = 2.04 
+            text = "l'avion" 
+        intervals [6]:
+            xmin = 2.04 
+            xmax = 2.34 
+            text = "vole?" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "words_confidence" 
+        xmin = 0.38 
+        xmax = 2.34 
+        intervals: size = 6 
+        intervals [1]:
+            xmin = 0.38 
+            xmax = 1.1 
+            text = "0.809" 
+        intervals [2]:
+            xmin = 1.1 
+            xmax = 1.28 
+            text = "" 
+        intervals [3]:
+            xmin = 1.28 
+            xmax = 1.5 
+            text = "0.968" 
+        intervals [4]:
+            xmin = 1.5 
+            xmax = 1.66 
+            text = "0.978" 
+        intervals [5]:
+            xmin = 1.66 
+            xmax = 2.04 
+            text = "0.993" 
+        intervals [6]:
+            xmin = 2.04 
+            xmax = 2.34 
+            text = "0.898" 

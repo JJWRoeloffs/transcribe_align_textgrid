@@ -1,8 +1,11 @@
 from __future__ import annotations
 
+from praatio.data_classes.textgrid import Textgrid
+from praatio.textgrid import openTextgrid
+
 import json
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict
 
 
 def load_json(data_file: Path) -> Dict:
@@ -10,7 +13,17 @@ def load_json(data_file: Path) -> Dict:
         return json.load(d)
 
 
-def get_json_data(path: List[str]) -> List[Dict]:
-    data_dir = Path(__file__).parent.resolve().joinpath(*path)
-    data_files = [x for x in data_dir.iterdir() if x.is_file() and x.suffix == ".json"]
-    return [load_json(x) for x in data_files]
+def load_textgrid(data_file: Path) -> Textgrid:
+    return openTextgrid(str(data_file), includeEmptyIntervals=False)
+
+
+def get_json_data(*paths: str) -> Dict[str, Dict]:
+    dir = Path(__file__).parent.resolve().joinpath(*paths)
+    data_files = [x for x in dir.iterdir() if x.is_file() and x.suffix == ".json"]
+    return {path.stem: load_json(path) for path in data_files}
+
+
+def get_textgrid_data(*paths: str) -> Dict[str, Dict]:
+    dir = Path(__file__).parent.resolve().joinpath(*paths)
+    data_files = [x for x in dir.iterdir() if x.is_file() and x.suffix == ".TextGrid"]
+    return {path.stem: load_textgrid(path) for path in data_files}

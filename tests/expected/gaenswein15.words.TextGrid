@@ -1,0 +1,360 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.84 
+xmax = 15.48 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "segments_text" 
+        xmin = 0.84 
+        xmax = 15.48 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0.84 
+            xmax = 8.56 
+            text = "Die Wiederzulassung des Messbuchs von 1962 als Missale für die außerordentliche Form des römischen Rethus" 
+        intervals [2]:
+            xmin = 8.56 
+            xmax = 9.44 
+            text = "" 
+        intervals [3]:
+            xmin = 9.44 
+            xmax = 12.74 
+            text = "ist dann nicht so weitergegangen, wie sich Papst Benediktas gewünscht hatte." 
+        intervals [4]:
+            xmin = 12.74 
+            xmax = 13.48 
+            text = "" 
+        intervals [5]:
+            xmin = 13.48 
+            xmax = 15.48 
+            text = "Das hat er als Emeritor so gemacht." 
+    item [2]:
+        class = "IntervalTier" 
+        name = "segments_confidence" 
+        xmin = 0.84 
+        xmax = 15.48 
+        intervals: size = 5 
+        intervals [1]:
+            xmin = 0.84 
+            xmax = 8.56 
+            text = "0.869" 
+        intervals [2]:
+            xmin = 8.56 
+            xmax = 9.44 
+            text = "" 
+        intervals [3]:
+            xmin = 9.44 
+            xmax = 12.74 
+            text = "0.889" 
+        intervals [4]:
+            xmin = 12.74 
+            xmax = 13.48 
+            text = "" 
+        intervals [5]:
+            xmin = 13.48 
+            xmax = 15.48 
+            text = "0.442" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words_text" 
+        xmin = 0.84 
+        xmax = 15.48 
+        intervals: size = 36 
+        intervals [1]:
+            xmin = 0.84 
+            xmax = 1.12 
+            text = "Die" 
+        intervals [2]:
+            xmin = 1.12 
+            xmax = 1.92 
+            text = "Wiederzulassung" 
+        intervals [3]:
+            xmin = 1.92 
+            xmax = 2.16 
+            text = "des" 
+        intervals [4]:
+            xmin = 2.16 
+            xmax = 2.74 
+            text = "Messbuchs" 
+        intervals [5]:
+            xmin = 2.74 
+            xmax = 3.28 
+            text = "von" 
+        intervals [6]:
+            xmin = 3.28 
+            xmax = 4.9 
+            text = "1962" 
+        intervals [7]:
+            xmin = 4.9 
+            xmax = 5.26 
+            text = "als" 
+        intervals [8]:
+            xmin = 5.26 
+            xmax = 5.76 
+            text = "Missale" 
+        intervals [9]:
+            xmin = 5.76 
+            xmax = 5.96 
+            text = "für" 
+        intervals [10]:
+            xmin = 5.96 
+            xmax = 6.12 
+            text = "die" 
+        intervals [11]:
+            xmin = 6.12 
+            xmax = 7.06 
+            text = "außerordentliche" 
+        intervals [12]:
+            xmin = 7.06 
+            xmax = 7.32 
+            text = "Form" 
+        intervals [13]:
+            xmin = 7.32 
+            xmax = 7.64 
+            text = "des" 
+        intervals [14]:
+            xmin = 7.64 
+            xmax = 8.04 
+            text = "römischen" 
+        intervals [15]:
+            xmin = 8.04 
+            xmax = 8.56 
+            text = "Rethus" 
+        intervals [16]:
+            xmin = 8.56 
+            xmax = 9.44 
+            text = "" 
+        intervals [17]:
+            xmin = 9.44 
+            xmax = 9.66 
+            text = "ist" 
+        intervals [18]:
+            xmin = 9.66 
+            xmax = 9.82 
+            text = "dann" 
+        intervals [19]:
+            xmin = 9.82 
+            xmax = 10 
+            text = "nicht" 
+        intervals [20]:
+            xmin = 10 
+            xmax = 10.16 
+            text = "so" 
+        intervals [21]:
+            xmin = 10.16 
+            xmax = 10.84 
+            text = "weitergegangen," 
+        intervals [22]:
+            xmin = 10.84 
+            xmax = 10.9 
+            text = "" 
+        intervals [23]:
+            xmin = 10.9 
+            xmax = 11.06 
+            text = "wie" 
+        intervals [24]:
+            xmin = 11.06 
+            xmax = 11.26 
+            text = "sich" 
+        intervals [25]:
+            xmin = 11.26 
+            xmax = 11.56 
+            text = "Papst" 
+        intervals [26]:
+            xmin = 11.56 
+            xmax = 12.08 
+            text = "Benediktas" 
+        intervals [27]:
+            xmin = 12.08 
+            xmax = 12.56 
+            text = "gewünscht" 
+        intervals [28]:
+            xmin = 12.56 
+            xmax = 12.74 
+            text = "hatte." 
+        intervals [29]:
+            xmin = 12.74 
+            xmax = 13.48 
+            text = "" 
+        intervals [30]:
+            xmin = 13.48 
+            xmax = 14.2 
+            text = "Das" 
+        intervals [31]:
+            xmin = 14.2 
+            xmax = 14.36 
+            text = "hat" 
+        intervals [32]:
+            xmin = 14.36 
+            xmax = 14.5 
+            text = "er" 
+        intervals [33]:
+            xmin = 14.5 
+            xmax = 14.7 
+            text = "als" 
+        intervals [34]:
+            xmin = 14.7 
+            xmax = 15.24 
+            text = "Emeritor" 
+        intervals [35]:
+            xmin = 15.24 
+            xmax = 15.42 
+            text = "so" 
+        intervals [36]:
+            xmin = 15.42 
+            xmax = 15.48 
+            text = "gemacht." 
+    item [4]:
+        class = "IntervalTier" 
+        name = "words_confidence" 
+        xmin = 0.84 
+        xmax = 15.48 
+        intervals: size = 36 
+        intervals [1]:
+            xmin = 0.84 
+            xmax = 1.12 
+            text = "0.872" 
+        intervals [2]:
+            xmin = 1.12 
+            xmax = 1.92 
+            text = "0.976" 
+        intervals [3]:
+            xmin = 1.92 
+            xmax = 2.16 
+            text = "0.986" 
+        intervals [4]:
+            xmin = 2.16 
+            xmax = 2.74 
+            text = "0.947" 
+        intervals [5]:
+            xmin = 2.74 
+            xmax = 3.28 
+            text = "0.971" 
+        intervals [6]:
+            xmin = 3.28 
+            xmax = 4.9 
+            text = "0.981" 
+        intervals [7]:
+            xmin = 4.9 
+            xmax = 5.26 
+            text = "0.925" 
+        intervals [8]:
+            xmin = 5.26 
+            xmax = 5.76 
+            text = "0.905" 
+        intervals [9]:
+            xmin = 5.76 
+            xmax = 5.96 
+            text = "0.955" 
+        intervals [10]:
+            xmin = 5.96 
+            xmax = 6.12 
+            text = "0.99" 
+        intervals [11]:
+            xmin = 6.12 
+            xmax = 7.06 
+            text = "0.943" 
+        intervals [12]:
+            xmin = 7.06 
+            xmax = 7.32 
+            text = "0.834" 
+        intervals [13]:
+            xmin = 7.32 
+            xmax = 7.64 
+            text = "0.863" 
+        intervals [14]:
+            xmin = 7.64 
+            xmax = 8.04 
+            text = "0.676" 
+        intervals [15]:
+            xmin = 8.04 
+            xmax = 8.56 
+            text = "0.629" 
+        intervals [16]:
+            xmin = 8.56 
+            xmax = 9.44 
+            text = "" 
+        intervals [17]:
+            xmin = 9.44 
+            xmax = 9.66 
+            text = "0.975" 
+        intervals [18]:
+            xmin = 9.66 
+            xmax = 9.82 
+            text = "0.688" 
+        intervals [19]:
+            xmin = 9.82 
+            xmax = 10 
+            text = "0.996" 
+        intervals [20]:
+            xmin = 10 
+            xmax = 10.16 
+            text = "0.992" 
+        intervals [21]:
+            xmin = 10.16 
+            xmax = 10.84 
+            text = "0.811" 
+        intervals [22]:
+            xmin = 10.84 
+            xmax = 10.9 
+            text = "" 
+        intervals [23]:
+            xmin = 10.9 
+            xmax = 11.06 
+            text = "0.988" 
+        intervals [24]:
+            xmin = 11.06 
+            xmax = 11.26 
+            text = "0.964" 
+        intervals [25]:
+            xmin = 11.26 
+            xmax = 11.56 
+            text = "0.884" 
+        intervals [26]:
+            xmin = 11.56 
+            xmax = 12.08 
+            text = "0.764" 
+        intervals [27]:
+            xmin = 12.08 
+            xmax = 12.56 
+            text = "0.992" 
+        intervals [28]:
+            xmin = 12.56 
+            xmax = 12.74 
+            text = "0.952" 
+        intervals [29]:
+            xmin = 12.74 
+            xmax = 13.48 
+            text = "" 
+        intervals [30]:
+            xmin = 13.48 
+            xmax = 14.2 
+            text = "0.968" 
+        intervals [31]:
+            xmin = 14.2 
+            xmax = 14.36 
+            text = "0.845" 
+        intervals [32]:
+            xmin = 14.36 
+            xmax = 14.5 
+            text = "0.99" 
+        intervals [33]:
+            xmin = 14.5 
+            xmax = 14.7 
+            text = "0.977" 
+        intervals [34]:
+            xmin = 14.7 
+            xmax = 15.24 
+            text = "0.429" 
+        intervals [35]:
+            xmin = 15.24 
+            xmax = 15.42 
+            text = "0.111" 
+        intervals [36]:
+            xmin = 15.42 
+            xmax = 15.48 
+            text = "0.09" 

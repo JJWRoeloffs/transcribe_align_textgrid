@@ -1,0 +1,176 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0.42 
+xmax = 35.58 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "segments_text" 
+        xmin = 0.42 
+        xmax = 35.58 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0.42 
+            xmax = 3.04 
+            text = "Bonjour! Est-ce que vous allez bien?" 
+        intervals [2]:
+            xmin = 3.04 
+            xmax = 30.98 
+            text = "" 
+        intervals [3]:
+            xmin = 30.98 
+            xmax = 35.58 
+            text = "Bonjour! Est-ce que vous allez bien?" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "segments_confidence" 
+        xmin = 0.42 
+        xmax = 35.58 
+        intervals: size = 3 
+        intervals [1]:
+            xmin = 0.42 
+            xmax = 3.04 
+            text = "0.936" 
+        intervals [2]:
+            xmin = 3.04 
+            xmax = 30.98 
+            text = "" 
+        intervals [3]:
+            xmin = 30.98 
+            xmax = 35.58 
+            text = "0.933" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words_text" 
+        xmin = 0.42 
+        xmax = 35.58 
+        intervals: size = 15 
+        intervals [1]:
+            xmin = 0.42 
+            xmax = 1.14 
+            text = "Bonjour!" 
+        intervals [2]:
+            xmin = 1.14 
+            xmax = 1.92 
+            text = "" 
+        intervals [3]:
+            xmin = 1.92 
+            xmax = 2.16 
+            text = "Est-ce" 
+        intervals [4]:
+            xmin = 2.16 
+            xmax = 2.24 
+            text = "que" 
+        intervals [5]:
+            xmin = 2.24 
+            xmax = 2.38 
+            text = "vous" 
+        intervals [6]:
+            xmin = 2.38 
+            xmax = 2.58 
+            text = "allez" 
+        intervals [7]:
+            xmin = 2.58 
+            xmax = 3.04 
+            text = "bien?" 
+        intervals [8]:
+            xmin = 3.04 
+            xmax = 30.98 
+            text = "" 
+        intervals [9]:
+            xmin = 30.98 
+            xmax = 33.42 
+            text = "Bonjour!" 
+        intervals [10]:
+            xmin = 33.42 
+            xmax = 34.44 
+            text = "" 
+        intervals [11]:
+            xmin = 34.44 
+            xmax = 34.7 
+            text = "Est-ce" 
+        intervals [12]:
+            xmin = 34.7 
+            xmax = 34.76 
+            text = "que" 
+        intervals [13]:
+            xmin = 34.76 
+            xmax = 34.9 
+            text = "vous" 
+        intervals [14]:
+            xmin = 34.9 
+            xmax = 35.1 
+            text = "allez" 
+        intervals [15]:
+            xmin = 35.1 
+            xmax = 35.58 
+            text = "bien?" 
+    item [4]:
+        class = "IntervalTier" 
+        name = "words_confidence" 
+        xmin = 0.42 
+        xmax = 35.58 
+        intervals: size = 15 
+        intervals [1]:
+            xmin = 0.42 
+            xmax = 1.14 
+            text = "0.874" 
+        intervals [2]:
+            xmin = 1.14 
+            xmax = 1.92 
+            text = "" 
+        intervals [3]:
+            xmin = 1.92 
+            xmax = 2.16 
+            text = "0.885" 
+        intervals [4]:
+            xmin = 2.16 
+            xmax = 2.24 
+            text = "0.988" 
+        intervals [5]:
+            xmin = 2.24 
+            xmax = 2.38 
+            text = "0.996" 
+        intervals [6]:
+            xmin = 2.38 
+            xmax = 2.58 
+            text = "0.99" 
+        intervals [7]:
+            xmin = 2.58 
+            xmax = 3.04 
+            text = "0.999" 
+        intervals [8]:
+            xmin = 3.04 
+            xmax = 30.98 
+            text = "" 
+        intervals [9]:
+            xmin = 30.98 
+            xmax = 33.42 
+            text = "0.741" 
+        intervals [10]:
+            xmin = 33.42 
+            xmax = 34.44 
+            text = "" 
+        intervals [11]:
+            xmin = 34.44 
+            xmax = 34.7 
+            text = "0.92" 
+        intervals [12]:
+            xmin = 34.7 
+            xmax = 34.76 
+            text = "0.996" 
+        intervals [13]:
+            xmin = 34.76 
+            xmax = 34.9 
+            text = "0.998" 
+        intervals [14]:
+            xmin = 34.9 
+            xmax = 35.1 
+            text = "0.997" 
+        intervals [15]:
+            xmin = 35.1 
+            xmax = 35.58 
+            text = "0.999" 

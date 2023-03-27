@@ -1,0 +1,608 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 20.12 
+tiers? <exists> 
+size = 4 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "segments_text" 
+        xmin = 0 
+        xmax = 20.12 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 6.28 
+            text = "Ella, my glorious love, how are you?" 
+        intervals [2]:
+            xmin = 6.28 
+            xmax = 9.18 
+            text = "Oh, I'm okay. I will be." 
+        intervals [3]:
+            xmin = 9.18 
+            xmax = 11.48 
+            text = "I said she could stay with us tomorrow just until she feels better." 
+        intervals [4]:
+            xmin = 11.48 
+            xmax = 11.5 
+            text = "" 
+        intervals [5]:
+            xmin = 11.5 
+            xmax = 13.34 
+            text = "Of course she can." 
+        intervals [6]:
+            xmin = 13.34 
+            xmax = 15.2 
+            text = "No, this won't be for long." 
+        intervals [7]:
+            xmin = 15.2 
+            xmax = 17.44 
+            text = "Well, if you can stay as long as you want, my love." 
+        intervals [8]:
+            xmin = 17.44 
+            xmax = 18.96 
+            text = "I've really missed you." 
+        intervals [9]:
+            xmin = 18.96 
+            xmax = 19.58 
+            text = "" 
+        intervals [10]:
+            xmin = 19.58 
+            xmax = 20.12 
+            text = "Pops." 
+    item [2]:
+        class = "IntervalTier" 
+        name = "segments_confidence" 
+        xmin = 0 
+        xmax = 20.12 
+        intervals: size = 10 
+        intervals [1]:
+            xmin = 0 
+            xmax = 6.28 
+            text = "0.452" 
+        intervals [2]:
+            xmin = 6.28 
+            xmax = 9.18 
+            text = "0.68" 
+        intervals [3]:
+            xmin = 9.18 
+            xmax = 11.48 
+            text = "0.571" 
+        intervals [4]:
+            xmin = 11.48 
+            xmax = 11.5 
+            text = "" 
+        intervals [5]:
+            xmin = 11.5 
+            xmax = 13.34 
+            text = "0.333" 
+        intervals [6]:
+            xmin = 13.34 
+            xmax = 15.2 
+            text = "0.649" 
+        intervals [7]:
+            xmin = 15.2 
+            xmax = 17.44 
+            text = "0.69" 
+        intervals [8]:
+            xmin = 17.44 
+            xmax = 18.96 
+            text = "0.529" 
+        intervals [9]:
+            xmin = 18.96 
+            xmax = 19.58 
+            text = "" 
+        intervals [10]:
+            xmin = 19.58 
+            xmax = 20.12 
+            text = "0.02" 
+    item [3]:
+        class = "IntervalTier" 
+        name = "words_text" 
+        xmin = 0 
+        xmax = 20.12 
+        intervals: size = 62 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.68 
+            text = "Ella," 
+        intervals [2]:
+            xmin = 1.68 
+            xmax = 1.94 
+            text = "" 
+        intervals [3]:
+            xmin = 1.94 
+            xmax = 2.7 
+            text = "my" 
+        intervals [4]:
+            xmin = 2.7 
+            xmax = 3.5 
+            text = "glorious" 
+        intervals [5]:
+            xmin = 3.5 
+            xmax = 4.18 
+            text = "love," 
+        intervals [6]:
+            xmin = 4.18 
+            xmax = 4.94 
+            text = "" 
+        intervals [7]:
+            xmin = 4.94 
+            xmax = 5.66 
+            text = "how" 
+        intervals [8]:
+            xmin = 5.66 
+            xmax = 6.02 
+            text = "are" 
+        intervals [9]:
+            xmin = 6.02 
+            xmax = 6.28 
+            text = "you?" 
+        intervals [10]:
+            xmin = 6.28 
+            xmax = 6.6 
+            text = "Oh," 
+        intervals [11]:
+            xmin = 6.6 
+            xmax = 6.68 
+            text = "" 
+        intervals [12]:
+            xmin = 6.68 
+            xmax = 7.02 
+            text = "I'm" 
+        intervals [13]:
+            xmin = 7.02 
+            xmax = 7.64 
+            text = "okay." 
+        intervals [14]:
+            xmin = 7.64 
+            xmax = 8.3 
+            text = "" 
+        intervals [15]:
+            xmin = 8.3 
+            xmax = 8.58 
+            text = "I" 
+        intervals [16]:
+            xmin = 8.58 
+            xmax = 8.86 
+            text = "will" 
+        intervals [17]:
+            xmin = 8.86 
+            xmax = 9.18 
+            text = "be." 
+        intervals [18]:
+            xmin = 9.18 
+            xmax = 9.44 
+            text = "I" 
+        intervals [19]:
+            xmin = 9.44 
+            xmax = 9.62 
+            text = "said" 
+        intervals [20]:
+            xmin = 9.62 
+            xmax = 9.76 
+            text = "she" 
+        intervals [21]:
+            xmin = 9.76 
+            xmax = 9.88 
+            text = "could" 
+        intervals [22]:
+            xmin = 9.88 
+            xmax = 10.08 
+            text = "stay" 
+        intervals [23]:
+            xmin = 10.08 
+            xmax = 10.22 
+            text = "with" 
+        intervals [24]:
+            xmin = 10.22 
+            xmax = 10.34 
+            text = "us" 
+        intervals [25]:
+            xmin = 10.34 
+            xmax = 10.56 
+            text = "tomorrow" 
+        intervals [26]:
+            xmin = 10.56 
+            xmax = 10.74 
+            text = "just" 
+        intervals [27]:
+            xmin = 10.74 
+            xmax = 10.86 
+            text = "until" 
+        intervals [28]:
+            xmin = 10.86 
+            xmax = 10.98 
+            text = "she" 
+        intervals [29]:
+            xmin = 10.98 
+            xmax = 11.18 
+            text = "feels" 
+        intervals [30]:
+            xmin = 11.18 
+            xmax = 11.48 
+            text = "better." 
+        intervals [31]:
+            xmin = 11.48 
+            xmax = 11.5 
+            text = "" 
+        intervals [32]:
+            xmin = 11.5 
+            xmax = 12.1 
+            text = "Of" 
+        intervals [33]:
+            xmin = 12.1 
+            xmax = 12.6 
+            text = "course" 
+        intervals [34]:
+            xmin = 12.6 
+            xmax = 12.88 
+            text = "she" 
+        intervals [35]:
+            xmin = 12.88 
+            xmax = 13.34 
+            text = "can." 
+        intervals [36]:
+            xmin = 13.34 
+            xmax = 13.78 
+            text = "No," 
+        intervals [37]:
+            xmin = 13.78 
+            xmax = 13.9 
+            text = "" 
+        intervals [38]:
+            xmin = 13.9 
+            xmax = 14.24 
+            text = "this" 
+        intervals [39]:
+            xmin = 14.24 
+            xmax = 14.54 
+            text = "won't" 
+        intervals [40]:
+            xmin = 14.54 
+            xmax = 14.68 
+            text = "be" 
+        intervals [41]:
+            xmin = 14.68 
+            xmax = 14.88 
+            text = "for" 
+        intervals [42]:
+            xmin = 14.88 
+            xmax = 15.2 
+            text = "long." 
+        intervals [43]:
+            xmin = 15.2 
+            xmax = 15.46 
+            text = "Well," 
+        intervals [44]:
+            xmin = 15.46 
+            xmax = 15.52 
+            text = "" 
+        intervals [45]:
+            xmin = 15.52 
+            xmax = 15.6 
+            text = "if" 
+        intervals [46]:
+            xmin = 15.6 
+            xmax = 15.68 
+            text = "you" 
+        intervals [47]:
+            xmin = 15.68 
+            xmax = 15.8 
+            text = "can" 
+        intervals [48]:
+            xmin = 15.8 
+            xmax = 16.04 
+            text = "stay" 
+        intervals [49]:
+            xmin = 16.04 
+            xmax = 16.18 
+            text = "as" 
+        intervals [50]:
+            xmin = 16.18 
+            xmax = 16.32 
+            text = "long" 
+        intervals [51]:
+            xmin = 16.32 
+            xmax = 16.46 
+            text = "as" 
+        intervals [52]:
+            xmin = 16.46 
+            xmax = 16.58 
+            text = "you" 
+        intervals [53]:
+            xmin = 16.58 
+            xmax = 16.76 
+            text = "want," 
+        intervals [54]:
+            xmin = 16.76 
+            xmax = 16.88 
+            text = "" 
+        intervals [55]:
+            xmin = 16.88 
+            xmax = 17.02 
+            text = "my" 
+        intervals [56]:
+            xmin = 17.02 
+            xmax = 17.44 
+            text = "love." 
+        intervals [57]:
+            xmin = 17.44 
+            xmax = 17.58 
+            text = "I've" 
+        intervals [58]:
+            xmin = 17.58 
+            xmax = 18.18 
+            text = "really" 
+        intervals [59]:
+            xmin = 18.18 
+            xmax = 18.68 
+            text = "missed" 
+        intervals [60]:
+            xmin = 18.68 
+            xmax = 18.96 
+            text = "you." 
+        intervals [61]:
+            xmin = 18.96 
+            xmax = 19.58 
+            text = "" 
+        intervals [62]:
+            xmin = 19.58 
+            xmax = 20.12 
+            text = "Pops." 
+    item [4]:
+        class = "IntervalTier" 
+        name = "words_confidence" 
+        xmin = 0 
+        xmax = 20.12 
+        intervals: size = 62 
+        intervals [1]:
+            xmin = 0 
+            xmax = 1.68 
+            text = "0.126" 
+        intervals [2]:
+            xmin = 1.68 
+            xmax = 1.94 
+            text = "" 
+        intervals [3]:
+            xmin = 1.94 
+            xmax = 2.7 
+            text = "0.368" 
+        intervals [4]:
+            xmin = 2.7 
+            xmax = 3.5 
+            text = "0.729" 
+        intervals [5]:
+            xmin = 3.5 
+            xmax = 4.18 
+            text = "0.432" 
+        intervals [6]:
+            xmin = 4.18 
+            xmax = 4.94 
+            text = "" 
+        intervals [7]:
+            xmin = 4.94 
+            xmax = 5.66 
+            text = "0.693" 
+        intervals [8]:
+            xmin = 5.66 
+            xmax = 6.02 
+            text = "0.902" 
+        intervals [9]:
+            xmin = 6.02 
+            xmax = 6.28 
+            text = "0.845" 
+        intervals [10]:
+            xmin = 6.28 
+            xmax = 6.6 
+            text = "0.427" 
+        intervals [11]:
+            xmin = 6.6 
+            xmax = 6.68 
+            text = "" 
+        intervals [12]:
+            xmin = 6.68 
+            xmax = 7.02 
+            text = "0.958" 
+        intervals [13]:
+            xmin = 7.02 
+            xmax = 7.64 
+            text = "0.605" 
+        intervals [14]:
+            xmin = 7.64 
+            xmax = 8.3 
+            text = "" 
+        intervals [15]:
+            xmin = 8.3 
+            xmax = 8.58 
+            text = "0.562" 
+        intervals [16]:
+            xmin = 8.58 
+            xmax = 8.86 
+            text = "0.813" 
+        intervals [17]:
+            xmin = 8.86 
+            xmax = 9.18 
+            text = "0.871" 
+        intervals [18]:
+            xmin = 9.18 
+            xmax = 9.44 
+            text = "0.66" 
+        intervals [19]:
+            xmin = 9.44 
+            xmax = 9.62 
+            text = "0.869" 
+        intervals [20]:
+            xmin = 9.62 
+            xmax = 9.76 
+            text = "0.748" 
+        intervals [21]:
+            xmin = 9.76 
+            xmax = 9.88 
+            text = "0.813" 
+        intervals [22]:
+            xmin = 9.88 
+            xmax = 10.08 
+            text = "0.925" 
+        intervals [23]:
+            xmin = 10.08 
+            xmax = 10.22 
+            text = "0.808" 
+        intervals [24]:
+            xmin = 10.22 
+            xmax = 10.34 
+            text = "0.628" 
+        intervals [25]:
+            xmin = 10.34 
+            xmax = 10.56 
+            text = "0.219" 
+        intervals [26]:
+            xmin = 10.56 
+            xmax = 10.74 
+            text = "0.067" 
+        intervals [27]:
+            xmin = 10.74 
+            xmax = 10.86 
+            text = "0.4" 
+        intervals [28]:
+            xmin = 10.86 
+            xmax = 10.98 
+            text = "0.803" 
+        intervals [29]:
+            xmin = 10.98 
+            xmax = 11.18 
+            text = "0.788" 
+        intervals [30]:
+            xmin = 11.18 
+            xmax = 11.48 
+            text = "0.807" 
+        intervals [31]:
+            xmin = 11.48 
+            xmax = 11.5 
+            text = "" 
+        intervals [32]:
+            xmin = 11.5 
+            xmax = 12.1 
+            text = "0.123" 
+        intervals [33]:
+            xmin = 12.1 
+            xmax = 12.6 
+            text = "0.86" 
+        intervals [34]:
+            xmin = 12.6 
+            xmax = 12.88 
+            text = "0.085" 
+        intervals [35]:
+            xmin = 12.88 
+            xmax = 13.34 
+            text = "0.674" 
+        intervals [36]:
+            xmin = 13.34 
+            xmax = 13.78 
+            text = "0.328" 
+        intervals [37]:
+            xmin = 13.78 
+            xmax = 13.9 
+            text = "" 
+        intervals [38]:
+            xmin = 13.9 
+            xmax = 14.24 
+            text = "0.419" 
+        intervals [39]:
+            xmin = 14.24 
+            xmax = 14.54 
+            text = "0.917" 
+        intervals [40]:
+            xmin = 14.54 
+            xmax = 14.68 
+            text = "0.906" 
+        intervals [41]:
+            xmin = 14.68 
+            xmax = 14.88 
+            text = "0.884" 
+        intervals [42]:
+            xmin = 14.88 
+            xmax = 15.2 
+            text = "0.823" 
+        intervals [43]:
+            xmin = 15.2 
+            xmax = 15.46 
+            text = "0.553" 
+        intervals [44]:
+            xmin = 15.46 
+            xmax = 15.52 
+            text = "" 
+        intervals [45]:
+            xmin = 15.52 
+            xmax = 15.6 
+            text = "0.084" 
+        intervals [46]:
+            xmin = 15.6 
+            xmax = 15.68 
+            text = "0.898" 
+        intervals [47]:
+            xmin = 15.68 
+            xmax = 15.8 
+            text = "0.827" 
+        intervals [48]:
+            xmin = 15.8 
+            xmax = 16.04 
+            text = "0.922" 
+        intervals [49]:
+            xmin = 16.04 
+            xmax = 16.18 
+            text = "0.896" 
+        intervals [50]:
+            xmin = 16.18 
+            xmax = 16.32 
+            text = "0.893" 
+        intervals [51]:
+            xmin = 16.32 
+            xmax = 16.46 
+            text = "0.902" 
+        intervals [52]:
+            xmin = 16.46 
+            xmax = 16.58 
+            text = "0.905" 
+        intervals [53]:
+            xmin = 16.58 
+            xmax = 16.76 
+            text = "0.731" 
+        intervals [54]:
+            xmin = 16.76 
+            xmax = 16.88 
+            text = "" 
+        intervals [55]:
+            xmin = 16.88 
+            xmax = 17.02 
+            text = "0.901" 
+        intervals [56]:
+            xmin = 17.02 
+            xmax = 17.44 
+            text = "0.831" 
+        intervals [57]:
+            xmin = 17.44 
+            xmax = 17.58 
+            text = "0.309" 
+        intervals [58]:
+            xmin = 17.58 
+            xmax = 18.18 
+            text = "0.763" 
+        intervals [59]:
+            xmin = 18.18 
+            xmax = 18.68 
+            text = "0.778" 
+        intervals [60]:
+            xmin = 18.68 
+            xmax = 18.96 
+            text = "0.622" 
+        intervals [61]:
+            xmin = 18.96 
+            xmax = 19.58 
+            text = "" 
+        intervals [62]:
+            xmin = 19.58 
+            xmax = 20.12 
+            text = "0.02" 
