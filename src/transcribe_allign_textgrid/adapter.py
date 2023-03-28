@@ -44,11 +44,6 @@ class WhisperSegment:
 
 class WhisperObject:
     def __init__(self, wt_output: Dict) -> None:
-        try:
-            self.language = str(wt_output["language"])
-        except TypeError:
-            print(wt_output)
-            raise ValueError
         self.text = str(wt_output["text"])
         self.segments = [WhisperSegment(x) for x in wt_output["segments"]]
 
