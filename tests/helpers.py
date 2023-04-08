@@ -18,12 +18,10 @@ def load_textgrid(data_file: Path) -> Textgrid:
 
 
 def get_json_data(*paths: str) -> Dict[str, Dict]:
-    dir = Path(__file__).parent.resolve().joinpath(*paths)
-    data_files = [x for x in dir.iterdir() if x.is_file() and x.suffix == ".json"]
+    data_files = Path(__file__).parent.resolve().joinpath(*paths).glob("*.json")
     return {path.stem: load_json(path) for path in data_files}
 
 
-def get_textgrid_data(*paths: str) -> Dict[str, Dict]:
-    dir = Path(__file__).parent.resolve().joinpath(*paths)
-    data_files = [x for x in dir.iterdir() if x.is_file() and x.suffix == ".TextGrid"]
+def get_textgrid_data(*paths: str) -> Dict[str, Textgrid]:
+    data_files = Path(__file__).parent.resolve().joinpath(*paths).glob("*.TextGrid")
     return {path.stem: load_textgrid(path) for path in data_files}

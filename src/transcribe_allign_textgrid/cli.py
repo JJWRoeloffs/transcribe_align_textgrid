@@ -51,7 +51,7 @@ class Args:
 
 
 def get_files(path: Path) -> List[Path]:
-    return [path] if path.is_file() else list(path.iterdir())
+    return [path] if path.is_file() else [x for x in path.iterdir() if x.is_file()]
 
 
 def parse_args(args: List[str]) -> Args:
