@@ -14,7 +14,7 @@ def fill_if_empty(entries: List[Interval]) -> List[Interval]:
 
 
 class WhisperWord:
-    def __init__(self, whisper_word) -> None:
+    def __init__(self, whisper_word: Dict) -> None:
         self.text = str(whisper_word["text"])
         self.start = float(whisper_word["start"])
         self.end = float(whisper_word["end"])
