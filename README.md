@@ -42,6 +42,7 @@ here `path` is the path to the audio files.
 * If a directory path is passed, all audio files in the directory will be transcribed, and force-alligned transcription textgrids of the same name will be generated in this directory.
 * If a file path is passed, a force-alligned transcription textgrid will be generated into the same directory with the same name as the original file.
 * If a glob is passed, the glob will be resoled and all matches will be processed as if the files were passed individually
+* By default, if a non-audio file is passed, an error is raised. To skip those instead, pass the `--skip` flag.
 
 ## Selecting a different model
 By default, this will run on the smallest, that is, least accurate and fastest, model, `tiny`. To run with another model, pass it as an argument:

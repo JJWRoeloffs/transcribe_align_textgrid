@@ -48,6 +48,7 @@ class Args:
     paths: List[Path]
     model: str
     language: Optional[str]
+    continue_on_err: bool
 
 
 def parse_path(path: Path) -> List[Path]:
@@ -101,11 +102,24 @@ def parse_args(args: List[str]) -> Args:
         nargs="?",
         required=False,
     )
+    parser.add_argument(
+        "--skip",
+        action="store_true",
+        help="If passed, any non-audio files passed are skipped.",
+        default=False,
+        required=False,
+    )
+
     arguments = parser.parse_args(args)
 
     paths = [file for path in arguments.paths for file in parse_pathstr(parser, path)]
 
-    return Args(paths=paths, model=arguments.model, language=arguments.language)
+    return Args(
+        paths=paths,
+        model=arguments.model,
+        language=arguments.language,
+        continue_on_err=arguments.skip,
+    )
 
 
 def run(args: Args) -> None:
@@ -119,7 +133,14 @@ def run(args: Args) -> None:
 
     for path in args.paths:
         print(f"Processing: {str(path.name)}")
-        audio = whisper_timestamped.load_audio(str(path))
+        try:
+            audio = whisper_timestamped.load_audio(str(path))
+        except RuntimeError:
+            if args.continue_on_err:
+                print(f"Could not process {path}, as audio, skipping")
+                continue
+            raise
+
         result = whisper_timestamped.transcribe(model, audio, language=args.language)
         textgrid = whisper_to_textgrid(result)
 
