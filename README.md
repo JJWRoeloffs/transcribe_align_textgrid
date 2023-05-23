@@ -10,7 +10,7 @@ A small wrapper package around [whisper-timestamped](https://github.com/linto-ai
     * The command line executable of python3.9 will be referred to as `[python-executable]` for the rest of the instructions
     * Install pip on old python versions with `[python-executable] -m ensurepip --default-pip`
 * `ffmpeg` Usually preinstalled on Linux. For windows see instructions for installation on the [whisper repository](https://github.com/openai/whisper)
-* `git` Usually preinstalled on Linux. For windows, visit [the git site](https://git-scm.com/download/win). 
+* `git` Usually preinstalled on Linux. For windows, visit [the git site](https://git-scm.com/download/win).
     * Needed for installation of whisper-timestamped, as it is not available on pypi
     * Note that it needs to be available from the command line; git-bash might not work.
 
@@ -38,9 +38,10 @@ Once the application is installed, you can run it with:
 [python-executable] -m transcribe_allign_textgrid [path]
 ```
 
-here `path` is the path to the audio files. 
+here `path` is the path to the audio files.
 * If a directory path is passed, all audio files in the directory will be transcribed, and force-alligned transcription textgrids of the same name will be generated in this directory.
-* If a file path is passed, a force-alligned transcription textgrid will be generated into the same directory as the original file.
+* If a file path is passed, a force-alligned transcription textgrid will be generated into the same directory with the same name as the original file.
+* If a glob is passed, the glob will be resoled and all matches will be processed as if the files were passed individually
 
 ## Selecting a different model
 By default, this will run on the smallest, that is, least accurate and fastest, model, `tiny`. To run with another model, pass it as an argument:

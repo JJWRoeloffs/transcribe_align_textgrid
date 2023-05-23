@@ -50,8 +50,20 @@ class Args:
     language: Optional[str]
 
 
-def get_files(path: Path) -> List[Path]:
+def parse_path(path: Path) -> List[Path]:
     return [path] if path.is_file() else [x for x in path.iterdir() if x.is_file()]
+
+
+def parse_glob(pathstr: str) -> List[Path]:
+    return list(Path().glob(pathstr))
+
+
+def parse_pathstr(ctx: argparse.ArgumentParser, pathstr: str) -> List[Path]:
+    pathspec = Path(pathstr)
+    paths = parse_path(pathspec) if pathspec.exists() else parse_glob(pathstr)
+    if not paths:
+        ctx.error(f"Could not resolve to filepaths: {pathspec}")
+    return [path.resolve() for path in paths]
 
 
 def parse_args(args: List[str]) -> Args:
@@ -90,13 +102,8 @@ def parse_args(args: List[str]) -> Args:
         required=False,
     )
     arguments = parser.parse_args(args)
-    paths = [Path(x).resolve() for x in arguments.paths]
 
-    for path in paths:
-        if not path.exists():
-            parser.error(f"Passed path does not exist: {path}")
-
-    paths = [file for path in paths for file in get_files(path)]
+    paths = [file for path in arguments.paths for file in parse_pathstr(parser, path)]
 
     return Args(paths=paths, model=arguments.model, language=arguments.language)
 
