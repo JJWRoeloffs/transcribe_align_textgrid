@@ -5,9 +5,9 @@ A small wrapper package around [whisper-timestamped](https://github.com/linto-ai
 ## Installation
 
 ## Requirements
-* `Python3.9` Other python versions might work, but dependency `onnxruntime` is quite iffy.
-    * Use the executable `python3.9` on Unix, available in most package managers, or `py -3.9` on Windows.
-    * The command line executable of python3.9 will be referred to as `[python-executable]` for the rest of the instructions
+* `Python3.8` to `python3.11`.
+    * Use the executable `python3.x` on Unix, available in most package managers, or `py -3.x` on Windows.
+    * This command line executable of will be referred to as `[python-executable]` for the rest of the instructions
     * Install pip on old python versions with `[python-executable] -m ensurepip --default-pip`
 * `ffmpeg` Usually preinstalled on Linux. For windows see instructions for installation on the [whisper repository](https://github.com/openai/whisper)
 * `git` Usually preinstalled on Linux. For windows, visit [the git site](https://git-scm.com/download/win).

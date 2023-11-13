@@ -9,13 +9,13 @@ authors = [{ name = "JJWRoeloffs", email = "jelleroeloffs@gmail.com" }]
 description = "Create for-alligned transcription TextGrids from Audio"
 keywords = ["praat", "whisper", "force-allign", "TextGrid"]
 readme = "README.md"
-requires-python = ">=3.7, <3.10"
+requires-python = ">=3.8, <3.12"
 classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: GNU Affero General Public License v3",
-    "Development Status :: 5 - Production/Stable",
-    "Intended Audience :: Science/Research",
-    "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU Affero General Public License v3",
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
 ]
 dynamic = ["dependencies"]
 
