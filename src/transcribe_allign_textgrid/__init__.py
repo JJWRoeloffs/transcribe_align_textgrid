@@ -21,7 +21,7 @@ along with this program.  If not see LICENSE for more details.
 __title__ = "transcribe_allign_textgrid"
 __author__ = "JJWRoeloffs"
 __license__ = "AGPL-3.0"
-__version__ = "0.1.4"
+__version__ = "0.1.5"
 
 
 from transcribe_allign_textgrid.adapter import (
