@@ -14,14 +14,11 @@ A small wrapper package around [whisper-timestamped](https://github.com/linto-ai
     * Needed for installation of whisper-timestamped, as it is not available on pypi
     * Note that it needs to be available from the command line; git-bash might not work.
 
-## Light installation
-If you don't have a Nvidea GPU, or don't want to use it, you cannot use the CUDA platform on which Whisper is run. In this case, you should install a light version of torch **before** installing whisper-timestamped (and thus this application). Do this with:
-```bash
-[python-executable] -m pip install \
-     torch==1.13.1+cpu \
-     torchaudio==0.13.1+cpu \
-     -f https://download.pytorch.org/whl/torch_stable.html
-```
+## Installing Torch
+
+Torch, on which Whisper is built, is quite a low-level library, meaning which version you'll need depends on your OS and type of GPU. On Mac and Windows, pip will by default install a non-accelerated CPU version of the library. If you are on Linux, it will presume you have a CUDA-capable (which is to say Nvidia branded) GPU. If you are on Windows and have an Nvidia GPU you can use, or are on Linux and either do not have a GPU or have an AMD GPU, you should check out the more detailed torch installation instructions [here](https://pytorch.org/get-started/locally/).
+
+This should be done *before* installing `transcribe_allign_textgrid` and `whisper_timestamped`.
 
 ## Installing
 Once the requirements are satisfied, you can install whisper-timestamped and this package:
