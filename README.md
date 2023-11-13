@@ -1,6 +1,6 @@
 # Transcribe Allign TextGrid
 
-A small wrapper package around [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped). Create force-alligned transcription TextGrids from raw audio.
+A small wrapper package around [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped). Create force-aligned transcription TextGrids from raw audio.
 
 ## Installation
 
@@ -9,9 +9,9 @@ A small wrapper package around [whisper-timestamped](https://github.com/linto-ai
     * Use the executable `python3.x` on Unix, available in most package managers, or `py -3.x` on Windows.
     * This command line executable of will be referred to as `[python-executable]` for the rest of the instructions
     * Install pip on old python versions with `[python-executable] -m ensurepip --default-pip`
-* `ffmpeg` Usually preinstalled on Linux. For windows see instructions for installation on the [whisper repository](https://github.com/openai/whisper)
-* `git` Usually preinstalled on Linux. For windows, visit [the git site](https://git-scm.com/download/win).
-    * Needed for installation of whisper-timestamped, as it is not available on pypi
+* `ffmpeg` Usually preinstalled on Linux. For Windows see instructions for installation on the [whisper repository](https://github.com/openai/whisper)
+* `git` Usually preinstalled on Linux. For Windows, visit [the git site](https://git-scm.com/download/win).
+    * Needed for installation of whisper-timestamped, as it is not available on PyPI
     * Note that it needs to be available from the command line; git-bash might not work.
 
 ## Installing Torch
@@ -23,7 +23,7 @@ This should be done *before* installing `transcribe_allign_textgrid` and `whispe
 ## Installing
 Once the requirements are satisfied, you can install whisper-timestamped and this package:
 
-Whisper-timestamped is not on pypi, so the seperate `git+` install is needed. (If you only want to use the package as a library instead of a cli, whisper-timestamped is not a dependency, and this manual install of ir is not needed.)
+Whisper-timestamped is not on Pypi, so a separate `git+` install is needed. (If you only want to use the package as a library instead of a cli, whisper-timestamped is not a dependency, and this manual install of it is not needed.)
 ```bash
 [python-executable] -m pip install git+https://github.com/linto-ai/whisper-timestamped
 [python-executable] -m pip install transcribe_allign_textgrid
@@ -36,9 +36,9 @@ Once the application is installed, you can run it with:
 ```
 
 here `path` is the path to the audio files.
-* If a directory path is passed, all audio files in the directory will be transcribed, and force-alligned transcription textgrids of the same name will be generated in this directory.
-* If a file path is passed, a force-alligned transcription textgrid will be generated into the same directory with the same name as the original file.
-* If a glob is passed, the glob will be resoled and all matches will be processed as if the files were passed individually
+* If a directory path is passed, all audio files in the directory will be transcribed, and force-aligned transcription TextGrids of the same name will be generated in this directory.
+* If a file path is passed, a force-aligned transcription TextGrid will be generated into the same directory with the same name as the original file.
+* If a glob is passed, the glob will be resolved and all matches will be processed as if the files were passed individually
 * By default, if a non-audio file is passed, an error is raised. To skip those instead, pass the `--skip` flag.
 
 ## Selecting a different model
@@ -58,18 +58,18 @@ The available models are:
 | large  |   1550 M   |    ~10 GB     |       1x       |
 
 ## Specifying what language to use
-By default, the application will try to detect what langage is used automatically. However, you can also specify this manually:
+By default, the application will try to detect what language is used automatically. However, you can also specify this manually:
 ```bash
 [python-executable] -m transcribe_allign_textgrid [path] --language [language]
 
-# Or also specifying waht model to use:
+# Or also specifying what model to use:
 [python-executable] -m transcribe_allign_textgrid [path] --model [model] --language [language]
 ```
 
 To see what languages are available, please see the [tokenizer.py](https://github.com/openai/whisper/blob/main/whisper/tokenizer.py) file in the Whisper source (Yes, the OpenAI team themselves recommends finding it this way, too.)
 
 # Using as a library
-The tool can also be used as a library. It exports one function: `whisper_to_textgrid()` Which takes in a transcription object (nested dict) from [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) and returns a Textgrid object from [praatio](https://github.com/timmahrt/praatIO). The typical Json output from whisper-timestamped works, too.
+The tool can also be used as a library. It exports one function: `whisper_to_textgrid()` Which takes in a transcription object (nested dictionary) from [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped) and returns a Textgrid object from [praatio](https://github.com/timmahrt/praatIO). The typical Json output from whisper-timestamped works, too.
 
 This library part of the package does not depend on whisper-timestamped, to make it fully installable and usable as a requirement via pipy.
 
@@ -78,9 +78,9 @@ The output TextGrids have four TextGridTiers:
 * `segments_text` The text in a given segment (Speaker's turn)
 * `segments_confidence` The confidence the model has that this is the correct labeling and segmentation for the segment
 * `words_text` The text of a given word
-* `words_confidence` The confidence the model has that this is the corrent labeling and segmentation for this word.
+* `words_confidence` The confidence the model has that this is the current labeling and segmentation for this word.
 
-If one of these tiers would have been completely empty per the output of whisper-timestamped, to statisfy Praat's error handeling, a tier with an empty interval (0.0, 0.1) is generated.
+If one of these tiers would have been empty per the output of whisper-timestamped, to satisfy Praat's error handling, a tier with an empty interval (0.0, 0.1) is generated.
 
 In praat, it will look a little like this:
 <p allign="center">
@@ -88,7 +88,7 @@ In praat, it will look a little like this:
 </p>
 
 # Development
-The package is quite trivial, but, if you do want work on it, here are some instructions
+The package is quite trivial, but, if you want to work on it, here are some instructions
 
 
 ## Style
@@ -97,9 +97,9 @@ All code is formatted with the [Black](https://github.com/psf/black) code-format
 I am dyslectic, and quite likely to make spelling errors in variables. If you find any, don't hesitate to send me a pull request!
 
 ## Running Tests
-After clonging the repository, moving into it, and installing `pytest` and `pytest-cov` with pip, run tests with:
+After cloning the repository, moving into it, and installing `pytest` and `pytest-cov` with pip, run tests with:
 ```bash
-# Install current version of package locally to be able to test it.
+# Install the current version of the package locally to be able to test it.
 [python-executable] -m pip install -e .
 
 [python-executable] -m pytest --cov=transcribe_allign_textgrid tests/
