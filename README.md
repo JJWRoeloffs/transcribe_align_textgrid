@@ -8,7 +8,7 @@ A small wrapper package around [whisper-timestamped](https://github.com/linto-ai
 
 - `Python3.8` to `python3.11`.
   - Use the executable `python3.x` on Unix, available in most package managers, or `py -3.x` on Windows.
-  - This command line executable of will be referred to as `[python-executable]` for the rest of the instructions
+  - This command line executable will be referred to as `[python-executable]` for the rest of the instructions
   - Install pip on old python versions with `[python-executable] -m ensurepip --default-pip`
 - `ffmpeg` Usually preinstalled on Linux. For Windows see instructions for installation on the [whisper repository](https://github.com/openai/whisper)
 
@@ -81,9 +81,9 @@ The tool can also be used as a library. It exports one function: `whisper_to_tex
 The output TextGrids have four TextGridTiers:
 
 - `segments_text` The text in a given segment (Speaker's turn)
-- `segments_confidence` The confidence the model has that this is the correct labeling and segmentation for the segment
+- `segments_confidence` The confidence the model has that this is the correct labelling and segmentation for the segment
 - `words_text` The text of a given word
-- `words_confidence` The confidence the model has that this is the current labeling and segmentation for this word.
+- `words_confidence` The confidence the model has that this is the current labelling and segmentation for this word.
 
 If one of these tiers would have been empty per the output of whisper-timestamped, to satisfy Praat's error handling, a tier with an empty interval (0.0, 0.1) is generated.
 
