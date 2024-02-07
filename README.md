@@ -6,7 +6,7 @@ A small wrapper package around [whisper-timestamped](https://github.com/linto-ai
 
 ### Requirements
 
-- `Python3.8` to `python3.11`.
+- `Python3.8` and above.
   - Use the executable `python3.x` on Unix, available in most package managers, or `py -3.x` on Windows.
   - This command line executable will be referred to as `[python-executable]` for the rest of the instructions
   - Install pip on old python versions with `[python-executable] -m ensurepip --default-pip`
