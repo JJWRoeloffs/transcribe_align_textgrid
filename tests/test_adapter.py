@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from transcribe_allign_textgrid import whisper_to_textgrid
+from transcribe_align_textgrid import whisper_to_textgrid
 from .helpers import get_json_data, get_textgrid_data
 
 

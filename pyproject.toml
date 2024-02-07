@@ -3,11 +3,11 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "transcribe_allign_textgrid"
-version = "0.1.5"
+name = "transcribe_align_textgrid"
+version = "0.2.0-dev"
 authors = [{ name = "JJWRoeloffs", email = "jelleroeloffs@gmail.com" }]
-description = "Create for-alligned transcription TextGrids from Audio"
-keywords = ["praat", "whisper", "force-allign", "TextGrid"]
+description = "Create for-aligned transcription TextGrids from Audio"
+keywords = ["praat", "whisper", "force-align", "TextGrid"]
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -29,5 +29,5 @@ where = ["src"]
 dependencies = { file = ["requirements.txt"] }
 
 [project.urls]
-"Homepage" = "https://github.com/JJWRoeloffs/transcribe_allign_textgrid"
-"Bug Tracker" = "https://github.com/JJWRoeloffs/transcribe_allign_textgrid/issues"
+"Homepage" = "https://github.com/JJWRoeloffs/transcribe_align_textgrid"
+"Bug Tracker" = "https://github.com/JJWRoeloffs/transcribe_align_textgrid/issues"

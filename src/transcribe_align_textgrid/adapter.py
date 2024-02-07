@@ -6,7 +6,7 @@ from praatio.data_classes.interval_tier import IntervalTier
 from praatio.data_classes.textgrid import Textgrid
 from praatio.utilities.constants import Interval
 
-from transcribe_allign_textgrid.whisper_schema import WHISPER_VALIDATOR
+from transcribe_align_textgrid.whisper_schema import WHISPER_VALIDATOR
 
 
 def _fill_if_empty(entries: List[Interval]) -> List[Interval]:
@@ -88,7 +88,7 @@ def whisper_to_textgrid(whisper_timestamped_output: Dict) -> Textgrid:
     Returns: praatio TextGrid glass with four interval tiers:
         segments_text: The text containing the continuous speech of one speaker
         segments_confidence: How confident the model was in labeling the above
-        words_text: The individually alligned words
+        words_text: The individually aligned words
         words_confidence: how confident the model was in labeling the above
     """
     try:

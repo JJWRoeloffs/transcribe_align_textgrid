@@ -1,6 +1,6 @@
 """
 A small wrapper package around whisper-timestamped.
-Create force-alligned transcription TextGrids from raw audio!
+Create force-aligned transcription TextGrids from raw audio!
 
 Copyright (c) 2023 Jelle Roeloffs
 
@@ -18,12 +18,12 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not see LICENSE for more details.
 """
 
-__title__ = "transcribe_allign_textgrid"
+__title__ = "transcribe_align_textgrid"
 __author__ = "JJWRoeloffs"
 __license__ = "AGPL-3.0"
 __version__ = "0.1.5"
 
 
-from transcribe_allign_textgrid.adapter import (
+from transcribe_align_textgrid.adapter import (
     whisper_to_textgrid as whisper_to_textgrid,
 )

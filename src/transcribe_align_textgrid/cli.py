@@ -10,7 +10,7 @@ from whisper import _MODELS
 from whisper.tokenizer import LANGUAGES
 import whisper_timestamped
 
-from transcribe_allign_textgrid import whisper_to_textgrid
+from transcribe_align_textgrid import whisper_to_textgrid
 
 
 @dataclass
@@ -39,10 +39,10 @@ def parse_pathstr(ctx: argparse.ArgumentParser, pathstr: str) -> List[Path]:
 
 def parse_args(args: List[str]) -> Args:
     parser = argparse.ArgumentParser(
-        prog="transcribe_allign_textgrid",
+        prog="transcribe_align_textgrid",
         description="""
             A small wrapper cli around whisper-timestamped.
-            Create force-alligned transcription TextGrids from raw audio!
+            Create force-aligned transcription TextGrids from raw audio!
             """,
     )
 

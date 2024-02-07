@@ -1,4 +1,4 @@
-# Transcribe Allign TextGrid
+# Transcribe align TextGrid
 
 A small wrapper package around [whisper-timestamped](https://github.com/linto-ai/whisper-timestamped). Create force-aligned transcription TextGrids from raw audio.
 
@@ -16,14 +16,14 @@ A small wrapper package around [whisper-timestamped](https://github.com/linto-ai
 
 Torch, on which Whisper is built, is quite a low-level library, meaning which version you'll need depends on your OS and type of GPU. On Mac and Windows, pip will by default install a non-accelerated CPU version of the library. If you are on Linux, it will presume you have a CUDA-capable (which is to say Nvidia branded) GPU. If you are on Windows and have an Nvidia GPU you can use, or are on Linux and either do not have a GPU or have an AMD GPU, you should check out the more detailed torch installation instructions [here](https://pytorch.org/get-started/locally/).
 
-This should be done _before_ installing `transcribe_allign_textgrid` and `whisper_timestamped`.
+This should be done _before_ installing `transcribe_align_textgrid` and `whisper_timestamped`.
 
 ### Installing
 
 Once the requirements are satisfied, you can install whisper-timestamped and this package:
 
 ```bash
-[python-executable] -m pip install transcribe_allign_textgrid
+[python-executable] -m pip install transcribe_align_textgrid
 ```
 
 ## Running from the command line
@@ -31,7 +31,7 @@ Once the requirements are satisfied, you can install whisper-timestamped and thi
 Once the application is installed, you can run it with:
 
 ```bash
-[python-executable] -m transcribe_allign_textgrid [path]
+[python-executable] -m transcribe_align_textgrid [path]
 ```
 
 here `path` is the path to the audio files.
@@ -46,7 +46,7 @@ here `path` is the path to the audio files.
 By default, this will run on the smallest, that is, least accurate and fastest, model, `tiny`. To run with another model, pass it as an argument:
 
 ```bash
-[python-executable] -m transcribe_allign_textgrid [path] --model [model]
+[python-executable] -m transcribe_align_textgrid [path] --model [model]
 ```
 
 The available models are:
@@ -64,10 +64,10 @@ The available models are:
 By default, the application will try to detect what language is used automatically. However, you can also specify this manually:
 
 ```bash
-[python-executable] -m transcribe_allign_textgrid [path] --language [language]
+[python-executable] -m transcribe_align_textgrid [path] --language [language]
 
 # Or also specifying what model to use:
-[python-executable] -m transcribe_allign_textgrid [path] --model [model] --language [language]
+[python-executable] -m transcribe_align_textgrid [path] --model [model] --language [language]
 ```
 
 To see what languages are available, please see the [tokenizer.py](https://github.com/openai/whisper/blob/main/whisper/tokenizer.py) file in the Whisper source (Yes, the OpenAI team themselves recommends finding it this way, too.)
@@ -89,7 +89,7 @@ If one of these tiers would have been empty per the output of whisper-timestampe
 
 In praat, it will look a little like this:
 
-<p allign="center">
+<p align="center">
   <img src=".assets/sample_output.png" />
 </p>
 
@@ -111,5 +111,5 @@ After cloning the repository, moving into it, and installing `pytest` and `pytes
 # Install the current version of the package locally to be able to test it.
 [python-executable] -m pip install -e .
 
-[python-executable] -m pytest --cov=transcribe_allign_textgrid tests/
+[python-executable] -m pytest --cov=transcribe_align_textgrid tests/
 ```

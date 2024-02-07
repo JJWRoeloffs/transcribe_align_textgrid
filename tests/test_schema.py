@@ -1,5 +1,5 @@
 from jsonschema import Draft202012Validator
-from transcribe_allign_textgrid.whisper_schema import WHISPER_SCHEMA
+from transcribe_align_textgrid.whisper_schema import WHISPER_SCHEMA
 
 
 class TestSchema:
