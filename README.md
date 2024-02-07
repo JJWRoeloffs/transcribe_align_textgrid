@@ -113,3 +113,11 @@ After cloning the repository, moving into it, and installing `pytest` and `pytes
 
 [python-executable] -m pytest --cov=transcribe_align_textgrid tests/
 ```
+
+To test the CLI, there are audio files in `./tests/audio/` to run on. For example:
+
+```bash
+[python-executable] -m transcribe_align_textgrid ./tests/audio/*.mp3
+```
+
+Since this relies on the stochastic models of Torch, it is not expected that the output between runs is ever fully equal, but they can be visually compared with the expected outputs from the `./tests/expected/` directory.
