@@ -28,6 +28,9 @@ where = ["src"]
 [tool.setuptools.dynamic]
 dependencies = { file = ["requirements.txt"] }
 
+[project.optional-dependencies]
+dev = ["pytest", "pytest-cov", "black"]
+
 [project.urls]
 "Homepage" = "https://github.com/JJWRoeloffs/transcribe_align_textgrid"
 "Bug Tracker" = "https://github.com/JJWRoeloffs/transcribe_align_textgrid/issues"

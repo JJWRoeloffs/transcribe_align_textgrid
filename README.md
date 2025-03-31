@@ -99,18 +99,22 @@ The package is quite trivial, but, if you want to work on it, here are some inst
 
 ### Style
 
-All code is formatted with the [Black](https://github.com/psf/black) code-formatter. As for casing, python standards are used except in cases where dependencies don't.
+All code is formatted with the [Black](https://github.com/psf/black) code-formatter.
 
 I am dyslectic, and quite likely to make spelling errors in variables. If you find any, don't hesitate to send me a pull request!
 
 ### Running Tests
 
-After cloning the repository, moving into it, and installing `pytest` and `pytest-cov` with pip, run tests with:
+After cloning the repository, moving into it, install the local version of the package itself and its development dependencies with:
 
 ```bash
-# Install the current version of the package locally to be able to test it.
-[python-executable] -m pip install -e .
+# Do this in a clean virtual environment to not confuse different versions.
+[python-executable] -m pip install -e ".[dev]"`
+```
 
+After that, this installed version of the package can be tested with:
+
+```bash
 [python-executable] -m pytest --cov=transcribe_align_textgrid tests/
 ```
 
