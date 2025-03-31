@@ -2,7 +2,7 @@
 A small wrapper package around whisper-timestamped.
 Create force-aligned transcription TextGrids from raw audio!
 
-Copyright (c) 2023 Jelle Roeloffs
+Copyright (c) 2025 JJW Roeloffs
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as
@@ -21,7 +21,7 @@ along with this program.  If not see LICENSE for more details.
 __title__ = "transcribe_align_textgrid"
 __author__ = "JJWRoeloffs"
 __license__ = "AGPL-3.0"
-__version__ = "0.2.2"
+__version__ = "0.2.3"
 
 
 from transcribe_align_textgrid.adapter import (
