@@ -38,7 +38,7 @@ here `path` is the path to the audio files.
 
 - If a directory path is passed, all audio files in the directory will be transcribed, and force-aligned transcription TextGrids of the same name will be generated in this directory.
 - If a file path is passed, a force-aligned transcription TextGrid will be generated into the same directory with the same name as the original file.
-- If a glob is passed, the glob will be resolved and all matches will be processed as if the files were passed individually
+- If a glob is passed, the glob will be resolved and all matches will be processed as if the files were passed individually (So: not only the default shell expansion of `*.wav`, but also shell-escaped versions like `'*.wav'`. This is non-standard, but I needed it for shell scripts)
 - By default, if a non-audio file is passed, an error is raised. To skip those instead, pass the `--skip` flag.
 
 ### Selecting a different model
@@ -109,7 +109,7 @@ After cloning the repository, moving into it, install the local version of the p
 
 ```bash
 # Do this in a clean virtual environment to not confuse different versions.
-[python-executable] -m pip install -e ".[dev]"`
+[python-executable] -m pip install -e ".[dev]"
 ```
 
 After that, this installed version of the package can be tested with:
