@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=78.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,7 +9,8 @@ authors = [{ name = "JJWRoeloffs", email = "jelleroeloffs@gmail.com" }]
 description = "Create for-aligned transcription TextGrids from Audio"
 keywords = ["praat", "whisper", "force-align", "TextGrid"]
 readme = "README.md"
-requires-python = ">=3.8"
+license = { file = "LICENCE" }
+requires-python = ">=3.9"
 classifiers = [
   "Programming Language :: Python :: 3",
   "License :: OSI Approved :: GNU Affero General Public License v3",
