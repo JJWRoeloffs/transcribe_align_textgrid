@@ -130,3 +130,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Files generated when manually testing
+tests/audio/*.TextGrid
